@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Link;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $links = Link::orderBy('clicks', 'desc')->get();
+    return view('welcome', compact('links'));
 });
