@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        Link::factory(100)->create();
         $this->call([
             UserSeeder::class,
+            LinkSeeder::class,
         ]);
+        Link::factory(9)->create();
     }
 }

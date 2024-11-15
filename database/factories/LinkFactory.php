@@ -25,10 +25,19 @@ class LinkFactory extends Factory
             'seo_keywords' => implode(', ', $this->faker->words(5)), // Palabras clave separadas por comas
             'clicks' => $this->faker->numberBetween(0, 1000), // Número aleatorio de clics
             'hover_count' => $this->faker->numberBetween(0, 500), // Hover aleatorio
+            
             'facebook_clicks' => $this->faker->numberBetween(0, 300),
             'tiktok_clicks' => $this->faker->numberBetween(0, 300),
             'instagram_clicks' => $this->faker->numberBetween(0, 300),
             'youtube_clicks' => $this->faker->numberBetween(0, 300),
+            'whatsapp_clicks' => $this->faker->numberBetween(0, 300),
+            
+            'facebook_clicks' => $this->faker->numberBetween(0, 300),
+            'tiktok_clicks' => $this->faker->numberBetween(0, 300),
+            'instagram_clicks' => $this->faker->numberBetween(0, 300),
+            'youtube_clicks' => $this->faker->numberBetween(0, 300),
+            'whatsapp_clicks' => $this->faker->numberBetween(0, 300),
+
             'created_at' => now(),
             'updated_at' => now(),
         ];

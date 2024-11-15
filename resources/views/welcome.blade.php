@@ -8,12 +8,12 @@
         .card-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
         }
 
         .card {
-            background-color: rgb(38, 186, 165); /* Fondo azul */
+            background: linear-gradient(135deg, rgb(38, 186, 165), rgb(55, 95, 122)); /* Degradado de verde a azul */
             border-radius: 10px;
             color: white;
             text-align: center;
@@ -29,6 +29,7 @@
             overflow: hidden;
         }
 
+
         .card:hover {
             transform: translateY(-5px);
         }
@@ -43,13 +44,16 @@
         }
 
         .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            line-height: 1.2;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            font-size: 0.9rem; /* Tamaño de letra ligeramente más pequeño */
+            margin-bottom: 4px; /* Ajuste sutil del margen */
+            font-weight: 500; /* Peso moderado para un mejor enfoque */
+            color: rgba(255, 255, 255, 0.85); /* Color blanco con opacidad para suavizar */
+            display: -webkit-box; /* Usado para soportar el recorte en múltiples líneas */
+            -webkit-line-clamp: 2; /* Limita el texto a 2 líneas */
+            -webkit-box-orient: vertical; /* Orientación vertical para el recorte */
+            overflow: hidden; /* Asegura que el texto no se desborde */
+            text-overflow: ellipsis; /* Añade puntos suspensivos al final */
+            transition: color 0.3s ease-in-out; /* Añade un efecto de transición */
         }
 
         .button-container {
@@ -57,7 +61,7 @@
         }
 
         .button-container a {
-            background-color: rgb(55, 95, 122); /* Verde */
+            background: linear-gradient(135deg, rgb(38, 186, 165), rgb(38, 186, 165));
             color: white;
             padding: 10px 20px;
             border-radius: 8px;
@@ -67,8 +71,10 @@
         }
 
         .button-container a:hover {
-            background-color: white;
-            color: rgb(38, 186, 165);
+            transform: scale(1.1); /* Aumenta el tamaño */
+            background-color: rgb(55, 95, 122); /* Cambia el color de fondo */
+            box-shadow: 0 0 15px 5px rgba(38, 186, 165, 0.6); /* Simula un brillo */
+            color: white; /* Asegura que el texto se mantenga blanco */
         }
 
         .icon-container {
@@ -165,6 +171,7 @@
     </style>
     <!-- Agregar CDN de FontAwesome para los íconos -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -192,7 +199,7 @@
                 <img src="{{ asset('storage/' . $link->image) }}" alt="{{ $link->title }}">
                 
                 <!-- Título centrado -->
-                <h2 class="card-title">{{ $link->title }}</h2>
+                <h2 class="card-title">{{ $link->seo_description }}</h2>
                 
                 <!-- Botón centrado -->
                 <div class="button-container">
@@ -222,6 +229,11 @@
                     @if($link->youtube_clicks > 0)
                         <a href="{{ $link->youtube_url ?? '#' }}" target="_blank">
                             <i class="fab fa-youtube"></i>
+                        </a>
+                    @endif
+                    @if($link->youtube_clicks > 0)
+                        <a href="{{ $link->whatsapp_url ?? '#' }}" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                     @endif
                 </div>

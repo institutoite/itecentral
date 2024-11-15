@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('image',50)->nullable(); // Nuevo campo para la imagen
 
             $table->string('seo_description',250)->nullable(); // Descripción SEO
+            $table->string('descripcion',250)->nullable(); // Descripción SEO
             $table->string('seo_keywords')->nullable(); // Palabras clave SEO
             // Métricas generales
             $table->unsignedBigInteger('clicks')->default(0); // Contador de clics generales
@@ -28,6 +29,13 @@ return new class extends Migration
             $table->unsignedBigInteger('tiktok_clicks')->default(0); // Contador de clics en TikTok
             $table->unsignedBigInteger('instagram_clicks')->default(0); // Contador de clics en Instagram
             $table->unsignedBigInteger('youtube_clicks')->default(0); // Contador de clics en YouTube
+            $table->unsignedBigInteger('whatsapp_clicks')->default(0); // Contador de clics en YouTube
+            
+            $table->string('facebook_link',100)->nullable(); // Contador de clics en Facebook
+            $table->string('tiktok_link',100)->nullable(); // Contador de clics en TikTok
+            $table->string('instagram_link',100)->nullable(); // Contador de clics en Instagram
+            $table->string('youtube_link',100)->nullable(); // Contador de clics en YouTube
+            $table->string('whatsapp_link',100)->nullable(); // Contador de clics en YouTube
             $table->timestamps();
         });
     }

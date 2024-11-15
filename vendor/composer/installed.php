@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fff8e01bdc9da4c920a441a38b242bb6160e4007',
+        'reference' => '13c67719084e09a1b628fb9f01c7402aef726ab8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -16,6 +16,15 @@
             'reference' => '6d7a868ae4218b9d7796334ff9a17e1539bad48a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../anourvalar/eloquent-serialize',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'artesaos/seotools' => array(
+            'pretty_version' => 'v1.3.1',
+            'version' => '1.3.1.0',
+            'reference' => '44920c7408c927f63c505aadcf35037c55c0a818',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../artesaos/seotools',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -544,7 +553,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fff8e01bdc9da4c920a441a38b242bb6160e4007',
+            'reference' => '13c67719084e09a1b628fb9f01c7402aef726ab8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -982,8 +991,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(

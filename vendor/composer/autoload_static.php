@@ -220,6 +220,7 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         ),
         'A' => 
         array (
+            'Artesaos\\SEOTools\\' => 18,
             'App\\' => 4,
             'AnourValar\\EloquentSerialize\\' => 29,
         ),
@@ -377,8 +378,8 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         ),
         'Spatie\\Ignition\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spatie/ignition/src',
-            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
+            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
+            1 => __DIR__ . '/..' . '/spatie/ignition/src',
         ),
         'Spatie\\FlareClient\\' => 
         array (
@@ -426,8 +427,8 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -483,8 +484,8 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -686,6 +687,10 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         array (
             0 => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src',
         ),
+        'Artesaos\\SEOTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -706,6 +711,10 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         'AnourValar\\EloquentSerialize\\Service' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Service.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Filament\\Resources\\LinkResource' => __DIR__ . '/../..' . '/app/Filament/Resources/LinkResource.php',
+        'App\\Filament\\Resources\\LinkResource\\Pages\\CreateLink' => __DIR__ . '/../..' . '/app/Filament/Resources/LinkResource/Pages/CreateLink.php',
+        'App\\Filament\\Resources\\LinkResource\\Pages\\EditLink' => __DIR__ . '/../..' . '/app/Filament/Resources/LinkResource/Pages/EditLink.php',
+        'App\\Filament\\Resources\\LinkResource\\Pages\\ListLinks' => __DIR__ . '/../..' . '/app/Filament/Resources/LinkResource/Pages/ListLinks.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -717,12 +726,35 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Link' => __DIR__ . '/../..' . '/app/Models/Link.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLd.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Contracts\\MetaTags' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/MetaTags.php',
+        'Artesaos\\SEOTools\\Contracts\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/OpenGraph.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOFriendly' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOFriendly.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOTools.php',
+        'Artesaos\\SEOTools\\Contracts\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/TwitterCards.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLd.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Facades\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/OpenGraph.php',
+        'Artesaos\\SEOTools\\Facades\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOMeta.php',
+        'Artesaos\\SEOTools\\Facades\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOTools.php',
+        'Artesaos\\SEOTools\\Facades\\TwitterCard' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/TwitterCard.php',
+        'Artesaos\\SEOTools\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLd.php',
+        'Artesaos\\SEOTools\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/OpenGraph.php',
+        'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Providers/SEOToolsServiceProvider.php',
+        'Artesaos\\SEOTools\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOMeta.php',
+        'Artesaos\\SEOTools\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOTools.php',
+        'Artesaos\\SEOTools\\Traits\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Traits/SEOTools.php',
+        'Artesaos\\SEOTools\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/TwitterCards.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src/BladeHeroiconsServiceProvider.php',
         'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
@@ -849,8 +881,11 @@ class ComposerStaticInit354f57898e2a3b337f2a7e216e0de3f1
         'DanHarrin\\DateFormatConverter\\Converter' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/Converter.php',
         'DanHarrin\\LivewireRateLimiting\\Exceptions\\TooManyRequestsException' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/Exceptions/TooManyRequestsException.php',
         'DanHarrin\\LivewireRateLimiting\\WithRateLimiting' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/WithRateLimiting.php',
+        'Database\\Factories\\LinkFactory' => __DIR__ . '/../..' . '/database/factories/LinkFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\LinkSeeder' => __DIR__ . '/../..' . '/database/seeders/LinkSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
