@@ -20,6 +20,6 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             LinkSeeder::class,
         ]);
-        Link::factory(9)->create();
+        // Link::factory(9)->create();
     }
 }

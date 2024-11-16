@@ -166,7 +166,82 @@
         }
     }
 
+    /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SECCION DESPUES DEL HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+    /* Estilos del Header */
+    
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
 
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-name {
+            font-size: 28px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .profile-title {
+            font-size: 18px;
+            color: #2980b9;
+        }
+
+        .profile-description {
+            font-size: 16px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .typewriter {
+            font-size: 22px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #3498db;
+            width: 0;
+            animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 35%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        @media (max-width: 1023px) {
+            .typewriter {
+                width: 100%; /* Ancho del 100% en pantallas pequeñas */
+            }
+        }
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
 
     </style>
     <!-- Agregar CDN de FontAwesome para los íconos -->
@@ -190,7 +265,26 @@
         </nav>
     </header>
 
-    <hr>
+    <div class="profile-container">
+        <!-- Foto de Perfil -->
+        <img src="tu-foto.jpg" alt="Foto de Itenauta" class="profile-pic">
+
+        <!-- Nombre de Usuario -->
+        <div class="profile-name">¡Hola, soy Itenauta!</div>
+
+        <!-- Título Profesional -->
+        <div class="profile-title">Ingeniero Informático | Creador de Aplicaciones Web</div>
+
+        <!-- Descripción Profesional -->
+        <div class="profile-description">
+            Soy un apasionado de la tecnología y la educación. Con años de experiencia en desarrollo de software, me especializo en la creación de aplicaciones web interactivas. Mi objetivo es brindar soluciones tecnológicas que faciliten el aprendizaje y la productividad.
+        </div>
+
+        <!-- Texto Animado -->
+        <div class="typewriter">Bienvenido, Itenauta. Descubre todas las herramientas que he creado para ti....</div>
+
+        <!-- Botón de Llamada a la Acción -->
+    </div>
     
     <div class="card-container">
         @foreach ($links as $link)
@@ -208,31 +302,31 @@
     
                 <!-- Íconos de redes sociales -->
                 <div class="icon-container">
-                    @if($link->facebook_clicks > 0)
-                        <a href="{{ $link->facebook_url ?? '#' }}" target="_blank">
+                    @if($link->facebook_link !=null )
+                        <a href="{{ $link->facebook_link ?? '#' }}" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
                     @endif
     
-                    @if($link->tiktok_clicks > 0)
-                        <a href="{{ $link->tiktok_url ?? '#' }}" target="_blank">
+                    @if($link->tiktok_link !=null )
+                        <a href="{{ $link->tiktok_link ?? '#' }}" target="_blank">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     @endif
     
-                    @if($link->instagram_clicks > 0)
-                        <a href="{{ $link->instagram_url ?? '#' }}" target="_blank">
+                    @if($link->instagram_link !=null )
+                        <a href="{{ $link->instagram_link ?? '#' }}" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     @endif
     
-                    @if($link->youtube_clicks > 0)
-                        <a href="{{ $link->youtube_url ?? '#' }}" target="_blank">
+                    @if($link->youtube_link !=null )
+                        <a href="{{ $link->youtube_link ?? '#' }}" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     @endif
-                    @if($link->youtube_clicks > 0)
-                        <a href="{{ $link->whatsapp_url ?? '#' }}" target="_blank">
+                    @if($link->youtube_link !=null )
+                        <a href="{{ $link->whatsapp_link ?? '#' }}" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     @endif

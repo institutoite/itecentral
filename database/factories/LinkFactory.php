@@ -32,11 +32,11 @@ class LinkFactory extends Factory
             'youtube_clicks' => $this->faker->numberBetween(0, 300),
             'whatsapp_clicks' => $this->faker->numberBetween(0, 300),
             
-            'facebook_clicks' => $this->faker->numberBetween(0, 300),
-            'tiktok_clicks' => $this->faker->numberBetween(0, 300),
-            'instagram_clicks' => $this->faker->numberBetween(0, 300),
-            'youtube_clicks' => $this->faker->numberBetween(0, 300),
-            'whatsapp_clicks' => $this->faker->numberBetween(0, 300),
+            'facebook_link' => $this->faker->url(),
+            'tiktok_link' => $this->faker->url(),
+            'instagram_link' => $this->faker->url(),
+            'youtube_link' => $this->faker->url(),
+            'whatsapp_link' => $this->faker->url(),
 
             'created_at' => now(),
             'updated_at' => now(),
