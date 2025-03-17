@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class,
-            LinkSeeder::class,
+            ApplicationSeeder::class,
         ]);
         // Link::factory(9)->create();
     }
